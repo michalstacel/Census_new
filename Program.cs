@@ -1,4 +1,5 @@
-﻿using Census;
+﻿
+using Census;
 using System.Xml.Linq;
 using System;
 using System.Linq;
@@ -12,14 +13,10 @@ int.TryParse(Console.ReadLine(), out int readline);
 
 var people = new List<Person> { };
 
-
-
 switch (readline)
 {
     case 1:
-
         Person p = CreatePerson();
-
         people.Add(p);
         break;
 
@@ -34,13 +31,12 @@ switch (readline)
     default:
         Console.WriteLine("Wrong number");
         break;
-
 }
+
 foreach (var item in people)
 {
     Console.WriteLine(item.Name);
 }
-
 
 static Person CreatePerson()
 {
