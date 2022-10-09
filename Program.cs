@@ -1,4 +1,5 @@
-﻿using Census;
+﻿
+using Census;
 using System.Xml.Linq;
 using System;
 using System.Linq;
@@ -10,15 +11,12 @@ Console.WriteLine($"3. Listing");
 
 int.TryParse(Console.ReadLine(), out int readline);
 
-var people = new List<Person> { };
 
 
 
 switch (readline)
 {
-    case 1:
 
-        Person p = CreatePerson();
 
         people.Add(p);
         break;
