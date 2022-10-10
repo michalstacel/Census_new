@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Census
-{ 
+namespace Census { 
     internal class Person
     {
         public int Id { get; set; }
@@ -23,6 +22,8 @@ namespace Census
             Surname = Surname1;
             Age = Age1;
         }
+
+
 
         // time 44:54 21.09 Tuple
         // time 42:28 21.09 Lista obiektów
