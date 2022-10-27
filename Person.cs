@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace Census { 
+﻿namespace Census
+{
     internal class Person
     {
         public int Id { get; set; }
@@ -15,6 +8,7 @@ namespace Census {
         public int Age { get; set; }
         public DateOnly Birthsday { get; set; }
 
+        // w nazwach zmiennych nie dodajemy liczb
         public Person(int Id1, string Name1, string Surname1, int Age1)
         {
             Id = Id1;

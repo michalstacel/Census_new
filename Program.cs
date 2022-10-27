@@ -1,11 +1,9 @@
 ﻿
 using Census;
-using System.Xml.Linq;
-using System;
-using System.Linq;
-using System.Collections.Generic;
 
+// Zawsze umieszczaj swój kod w namespace'ach i klasach!
 var people = new List<Person> { };
+// Listy zapisujemy z dużej litery
 
 static void menu()
 {
@@ -14,7 +12,9 @@ static void menu()
     Console.WriteLine("3. Listing");
     Console.WriteLine("0. Exit");
 }
+// Nazwy metod z dużych liter
 
+// O takich wywołaniach pogadamy na spotkaniu. Niezbyt to estatyczne.
 menu();
 
 while (int.TryParse(Console.ReadLine(), out int readline))
@@ -32,6 +32,7 @@ while (int.TryParse(Console.ReadLine(), out int readline))
 
         case 2:
             Console.WriteLine("input an Id of variable that you want to remove:");
+            // Nazwy zmiennych z małych liter
             int.TryParse(Console.ReadLine(), out int ToRemove);
             foreach (var item in people)
             {
@@ -58,6 +59,7 @@ while (int.TryParse(Console.ReadLine(), out int readline))
     static Person CreatePerson()
     {
         Console.WriteLine("Id ?");
+        // Możesz użyć TryParse by zwalidować czy id jest liczbą
         int Id = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Name ?");
         string Name = Console.ReadLine();
