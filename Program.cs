@@ -37,6 +37,7 @@ while (int.TryParse(Console.ReadLine(), out int readline))
             {
                 if (item.Id == ToRemove)
                     people.Remove(item);
+                break;
             }
             menu();
             break;
